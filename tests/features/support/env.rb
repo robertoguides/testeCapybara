@@ -1,5 +1,6 @@
 require 'capybara/cucumber'
 require 'selenium-webdriver'
+require_relative 'helper.rb'
 
 Capybara.configure do |config|
     #selenium   #selenium_chrome    #selenium_chome_healess
@@ -7,3 +8,5 @@ Capybara.configure do |config|
     config.app_host = 'https://www.saucedemo.com/'
     config.default_max_wait_time = 5
 end
+
+World(Helper)
