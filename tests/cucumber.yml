@@ -2,4 +2,4 @@
 
 default: -p html
 pretty: --format pretty
-html: --format html --out=reports/relatorio_testes.html
+html: --format json --out=reports/relatorio_testes.json
